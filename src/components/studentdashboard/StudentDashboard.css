@@ -1,0 +1,115 @@
+
+.items-container {
+  width: 23%;
+  position: fixed;
+  top: 95px;
+  left: 2px;
+  bottom: 0;
+  background-color: #007bff;
+  padding-top: 60px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+  display: block;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.item:hover {
+  background-color: #0056b3;
+  border-radius: 4px;
+}
+
+.logout {
+  display: block;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  width: auto;
+  transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+  background-color: #0056b3;
+  border-radius: 4px;
+}
+
+.welcome-message {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffff;
+  margin-left: 10px;
+  position: relative;
+  top: -40px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 75px;
+  margin-top: 10%;
+  grid-template-rows: repeat(2, 1fr);
+  margin-left: 6.5%;
+}
+
+.cards {
+  width: 400px;
+  height: 160px;
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  border: 1px solid #fff;
+}
+
+.cards:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 50%;
+  height: 95%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(5px); /* Blur effect for the image */
+  opacity: 0.7; /* Semi-transparent image */
+}
+
+.card-text {
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.cards.sarfaid {
+  background: linear-gradient(135deg, purple, black); /* Purple to black gradient */
+}
+
+.cards.sbit {
+  background: linear-gradient(135deg, yellow, black); /* Yellow to black gradient */
+}
+
+.cards.shtm {
+  background: linear-gradient(135deg, orange, black); /* Orange to black gradient */
+}
+
+.cards.sslate {
+  background: linear-gradient(135deg, blue, black); /* Blue to black gradient */
+}

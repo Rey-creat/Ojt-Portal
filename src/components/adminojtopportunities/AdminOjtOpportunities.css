@@ -1,0 +1,119 @@
+/* Main container styling */
+.admin-ojt-container {
+  padding: 20px;
+  width: 71.3%; /* Adjust the container width to a smaller value */
+  max-width: 1200px; /* Optional max-width for larger screens */
+  margin-top: -1%; /* Adjust top margin */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  justify-content: flex-start;
+  margin-left: 15.5%; /* Removed the conflicting margin-left: 24% */
+}
+
+/* Heading Styling */
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: left; /* Align heading to the left */
+}
+
+/* Button to add a new opportunity */
+.add-opportunity-btn {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: inline-block;
+  margin-left: 1%;
+}
+
+.add-opportunity-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Container for the OJT list */
+.ojt-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 20px; /* Space between items */
+  margin-top: 20px;
+  width: 100%; /* Ensure it takes the full width of the container */
+}
+
+/* Card styling for each OJT opportunity */
+.ojt-card {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure the card fills the column */
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border: 1px solid #007bff; /* Blue border */
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.ojt-card:hover {
+  transform: scale(1.05); /* Slightly zoom in the card */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Increase shadow for a more lifted effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+/* OJT Info section */
+.ojt-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.ojt-info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.ojt-info p {
+  font-size: 16px;
+  color: #000;
+}
+
+/* Actions (delete button) styling */
+.ojt-actions {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Delete button styling */
+.delete-btn {
+  background-color: #dc3545; /* Red color */
+  color: #f8f8f8;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.mains-contents {
+  background-color: #f8f8f8; /* White background for the container */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+  width: 100%; /* Adjust width as needed */
+  max-width: 1010px; /* Maximum width of the container */
+  margin-top: 5%;
+  margin-left: 100px;
+}

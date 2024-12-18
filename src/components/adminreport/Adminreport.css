@@ -1,0 +1,145 @@
+/* Admin Report Styles */
+.reports-container {
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 910px;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 7%;
+  margin-left: 25%;
+  height: auto;
+}
+
+/* Title and headers */
+.reports-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: -40px;
+  color: #007bff;
+}
+
+.section-titles{
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+  margin-top: 1%;
+}
+
+/* Report sections */
+.report-section {
+  margin-bottom: 40px;
+}
+
+/* Cards layout */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+/* Reports Overview */
+.reports-overview {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.reports-overview p {
+  font-size: 18px;
+  color: #000;
+  margin: 0 0 15px;
+}
+
+.review-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-button:hover {
+  background-color: #0056b3;
+}
+
+/* Table for progress report */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.styled-table th, .styled-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.styled-table td {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+.admin-response-input {
+  width: 100%; /* Ensures the input spans the full width */
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical; /* Allows vertical resizing */
+}
+/* CSS for Action Buttons */
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Allows buttons to wrap in case of small screen sizes */
+  gap: 20px; /* Spacing between buttons */
+  justify-content: center; /* Centers the buttons horizontally */
+  margin-top: 30px; /* Adds space above the action buttons */
+}
+
+.action-button {
+  background-color: #007bff; /* Blue background for the buttons */
+  color: white; /* White text color */
+  padding: 12px;
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions for background color and scaling */
+  width: 200px; /* Fixed width for each button */
+  text-align: center; /* Centers the text */
+  height: 40px;
+}
+
+.action-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.action-button:focus {
+  outline: none; /* Removes the outline when focused */
+}
+
+@media (max-width: 768px) {
+  .action-buttons {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    align-items: center; /* Center the buttons */
+  }
+
+  .action-button {
+    width: 100%; /* Make the buttons take up full width on smaller screens */
+    margin-bottom: 10px; /* Space between buttons */
+  }
+}

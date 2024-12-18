@@ -1,0 +1,73 @@
+.user-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+
+
+/* Profile form container */
+.profile-forms-containers {
+  width: 88%;
+  background-color: #fff;
+  padding: 30px;
+  margin-left: 6.5%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 7%;
+  color: #000;
+}
+
+/* Profile section layout */
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+}
+
+/* Personal info on the left */
+.personal-info {
+  width: 48%;
+}
+
+/* Educational info on the right */
+.educational-info {
+  width: 48%;
+}
+
+/* Form group styles */
+.forms-group {
+  margin-bottom: 15px;
+}
+
+.forms-group label {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.forms-group input {
+  width: 95%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button styling */
+.update-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update-btn:hover {
+  background-color: #0056b3;
+}

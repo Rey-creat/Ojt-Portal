@@ -1,0 +1,66 @@
+.student-task-content {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #fff;
+    width: 71%; 
+    margin-left: 24.4%;
+    margin-bottom: 31%;  /* Reduced from 7% to move the task container higher */
+    border-radius: 8px;
+}
+/* Table for Viewing Tasks */
+.student-task-table {
+  width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Added a little space from the header */
+}
+.student-task-table th,
+.student-task-table td {
+  padding: 12px 15px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.student-task-table th {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+}
+
+.student-task-table td {
+  font-size: 16px;
+}
+
+/* Task Status Styling */
+.student-status {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+.student-status.pending {
+  color: orange;
+}
+
+.student-status.approved {
+  background-color: #5bc0de;
+  color: white;
+}
+
+.student-status.overdue {
+
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .student-task-table {
+    font-size: 14px;
+  }
+
+  .student-task-header {
+    font-size: 20px;
+  }
+}

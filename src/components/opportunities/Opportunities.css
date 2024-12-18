@@ -1,0 +1,359 @@
+/* Sidebar styles */
+.items-container {
+  width: 23%; /* Make sidebar wider */
+  position: fixed;
+  top: 95px;
+  left: 2px;
+  bottom: 0;
+  background-color: #007bff; /* Blue background */
+  padding-top: 60px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+  display: block;
+  padding: 12px;
+  color: white; /* White text */
+  text-decoration: none;
+  font-size: 18px; /* Slightly larger text */
+  margin-bottom: 20px; /* Margin between items */
+}
+
+.item:hover {
+  background-color: #0056b3; /* Darker blue when hovered */
+  border-radius: 4px;
+}
+
+.logout {
+  display: block;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  width: auto;
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.logout:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  border-radius: 4px; /* Optional: keep consistent rounded corners */
+}
+
+/* Welcome message styling */
+.welcome-message {
+  font-size: 26px; /* Slightly larger text */
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffff;
+  margin-left: 10px;
+}
+
+/* Container Styling */
+/* Container Styling */
+.form-container {
+  background: rgba(239,239,239,0.35);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(239,239,239,0.175);
+  padding: 20px;
+  border-radius: 10px;
+  width: 920px; /* Adjusted width for the form */
+  position: absolute; /* Use absolute positioning */
+  top:26%; /* Adjust for vertical alignment (10% from the top) */
+  left: 60%; /* Center horizontally */
+  transform: translate(-50%, -10%); /* Correct horizontal centering */
+  height:365px;
+  
+}
+
+
+/* Header */
+.form-container h3 {
+  text-align: center;
+  margin-bottom:20px;
+  color: #000;
+  font-size: 20px;
+}
+
+/* Form Rows */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px; /* Space between rows */
+}
+
+/* Form Groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Take equal space */
+  margin-right: 15px; /* Margin between fields */
+  color: #333;
+  font-size: 15px;
+  font-weight: 200;
+  font-family: 'Poppins' sans-serif;
+}
+
+.form-group:last-child {
+  margin-right: 0; /* Remove margin for the last field */
+}
+
+/* Input Fields */
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #0056b3;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  align-self: flex-start; /* Align to the left */
+}
+.submit-button:hover {
+  background-color: #007bff;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%; /* Make it responsive */
+  }
+
+  .form-row {
+    flex-direction: column; /* Stack fields vertically */
+  }
+
+  .form-group {
+    margin-right: 0; /* Remove margin in stacked layout */
+    margin-bottom: 10px; /* Add space between stacked fields */
+  }
+}
+
+
+
+/* Opportunities selector */
+.opportunities-selector {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin-top: 7%;
+  border-radius: 8px;
+  margin-left: 25%;
+  display: flex; /* Use flexbox for the layout */
+  justify-content: space-between; /* Space the items out */
+}
+
+.school-selector,
+.program-selector {
+  width: 100%; /* Adjust width to make them fit in a row */
+}
+
+.school-selector select,
+.program-selector select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Opportunity card styles */
+.opportunity-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.card-section {
+  margin-bottom: 20px;
+}
+
+.card-section h4 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.card-section li {
+  font-size: 16px;
+  color: #333;
+}
+
+.card-section li::before {
+  content: "•";
+  color: #007bff;
+  margin-right: 10px;
+}
+
+/* Card container styles */
+.card-container {
+  position: absolute;
+  top: 20%;
+  right: 5%; /* Move card to the right side */
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.card-container h3 {
+  margin-bottom: 10px;
+  color: #007bff;
+  font-size: 20px;
+}
+
+.card-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.card-container ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.card-container ul li::before {
+  content: "• ";
+  color: #007bff;
+}
+
+/* Cards container (for multiple cards) */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
+  width: 90%;
+  margin-left: 10%;
+  
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Apply equal left and right margin for description */
+.card li {
+  margin: 8px 10px; /* Set equal left and right margin */
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between; /* Align text to the left and button to the right */
+  align-items: center; /* Align text and button vertically */
+}
+
+/* Add hover effect to all cards */
+.card {
+  background-color: #f4f4f4;
+  margin-right: 10%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 270px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+      border: 1px solid #007bff;
+      width: 290px;
+      margin-left:-5%;
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+/* Apply button at the bottom and center it */
+.apply-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  margin-top: auto;
+  min-width: 120px; /* You can adjust this value as needed */
+  text-align: center; /* Ensures text is centered if it wraps */
+}
+.apply-btn, .submit-button {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 10px;
+}
+
+.apply-btn:hover {
+  background-color: #135ecf;
+}
+.card p {
+  color: #666;
+  font-size: 17px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-family: 'Poppins' sans-serif;
+}
+.custom-select-height {
+  height: 38px; /* Adjust the height value as needed */
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 5%;
+  color:#333;
+}
+/* Styling for the Date Applied input field */
+.date-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.date-input:focus {
+  outline: none;
+  border-color: #007bff; /* Optional: Change the border color when focused */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: Add focus shadow */
+}
+
+/* You can also adjust the hover effect */
+.date-input:hover {
+  border-color: #007bff;
+}
